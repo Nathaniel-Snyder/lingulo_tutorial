@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>Responsive Website Tutorial</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'/>
+    <script src="js/modernizr.min.js"></script>
+    <script src="js/respond.js"></script>
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="lightbox/js/lightbox.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/jquery.slides.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Nathaniel's Website</h1>
+      <nav>
+        <ul>
+          <li><a href="javascript:void(0)">Contact</a></li>
+          <li><a href="javascript:void(0)">About</a></li>
+          <li><a href="javascript:void(0)">Portfolio</a></li>
+          <li><a href="javascript:void(0)">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <h2 class="hidden">Slider</h2>
+      <article id="slider_content1">
+        <h3>Some German I think</h3>
+        <p>Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik.
+        <a class="responsive_button">Read more</a>
+        </p>
+        <a class="button" href="#">Read more</a>
+      </article>
+      <article id="slider_content2">
+        <h3>Some More German</h3>
+        <p>Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.
+        <a class="responsive_button">Read more</a>
+        </p>
+        <a class="button" href="#">Read more</a>
+      </article>
+      <article id="slider_content3">
+        <h3>A Third Slide of German</h3>
+        <p>Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+        <a class="responsive_button">Read more</a>
+        </p>
+        <a class="button" href="#">Read more</a>
+      </article>
+      <div id="slides">
+        <img src="img/slide1.jpg" alt="Image 1">
+        <img src="img/slide2.jpg" alt="Image 2">
+        <img src="img/slide3.jpg" alt="Image 3">
+      </div>
+    </section>
+
+    <section id="spacer">
+      <h2 class="hidden">Search</h2>
+      <p>Search my site!</p>
+      <div class="search">
+        <form action="#">
+          <input type="text" name="sitesearch" value="Say something"/>
+          <input type="submit" name="start_search" class="button" value="Search"/>
+        </form>
+      </div>
+    </section>
+
+    <section id="boxcontent">
+      <h2 class="hidden">Features</h2>
+      <article>
+        <img src="img/lock.png" alt="Lock"/>
+        <h3>Secure</h3>
+        <p>Product X uses state of the art security measures to ensure that even the cleverest hackers go home empty-handed.</p>
+      </article>
+      <article>
+        <img src="img/phone.png" alt="Phone"/>
+        <h3>Mobile</h3>
+        <p>Product X can be used anywhere; whether you are on the go, or toliet.</p>
+      </article>
+      <article>
+        <img src="img/settings.png" alt="Settings">
+        <h3>Settings</h3>
+        <p>There's so many features on this website it'll make your head spin</p>
+      </article>
+    </section>
+
+    <section id="four_columns">
+      <h2>Places to Visit</h2>
+      <article class="img-item">
+        <h3 class="hidden">Beach Picture</h3>
+        <figure>
+          <a href="img/beach.jpg" rel="lightbox" title="Beach">
+            <span class="thumb-screen"></span>
+            <img src="img/beach_sml.jpg" alt="Beach Picture"/>
+          </a>
+          <figcaption>
+            <strong>
+              Location: Fuji
+            </strong>
+            This beach looks prime for some lounging.
+          </figcaption>
+        </figure>
+      </article>
+      <article>
+        <h3 class="hidden">Taj Mahal</h3>
+        <figure>
+          <a href="img/taj_mahal.jpg" rel="lightbox" title="Taj">
+            <span class="thumb-screen"></span>
+            <img src="img/taj_mahal_sml.jpg" alt="Taj Mahal"/>
+          </a>
+          <figcaption>
+            <strong>Location: India</strong>
+             The most impressive architectural masterpiece in the world.
+          </figcaption>
+        </figure>
+      </article>
+      <article class="img-item">
+        <h3 class="hidden">Niagra Falls</h3>
+        <figure>
+          <a href="img/niagra.jpg" rel="lightbox" title="Niagra Falls">
+            <span class="thumb-screen"></span>
+            <img src="img/niagra_sml.jpg" alt="Niagra Falls"/>
+          </a>
+          <figcaption>
+            <strong>Location: Canada/U.S. Border</strong>
+             The best white-water rafting in the world!
+          </figcaption>
+        </figure>
+      </article>
+      <article class="img-item">
+        <h3 class="hidden">Machu Picchu</h3>
+        <figure>
+          <a href="img/machu.jpg" rel="lightbox" title="Machu Picchu">
+            <span class="thumb-screen"></span>
+            <img src="img/machu_sml.jpg" alt="Machu Picchu"/>
+          </a>
+          <figcaption>
+            <strong>Location: Peru</strong>
+             The most impressive ruins tucked up in a mountain
+          </figcaption>
+        </figure>
+      </article>
+      <br class="clear"/>
+    </section>
+
+    <section id="text_columns">
+      <h2 class="hidden">My Story</h2>
+      <article class="column1">
+        <h3>Fresh Prince</h3>
+        <p>Now, this is a story all about how my life got flipped-turned upside down and I'd like to take a minute just sit right there I'll tell you how I became the prince of a town called Bel Air</p>
+        <p>In west Philadelphia born and raised. On the playground was where I spent most of my days. Chillin' out maxin' relaxin' all cool and all shootin some b-ball outside of the school when a couple of guys who were up to no good started making trouble in my neighborhood. I got in one little fight and my mom got scared. She said 'You're movin' with your auntie and uncle in Bel Air'</p>
+      </article>
+      <section class="column2">
+        <h3 class="hidden">Animations</h3>
+        <article class="row">
+          <h4 class="hidden">Rocket</h4>
+          <img src="img/rocket.png" width="80" class="rocket" alt="Fly baby fly"/>
+          <p>Watch this rocket fly into the sky</p>
+        </article>
+        <article>
+          <h4 class="hidden">Clock</h4>
+          <img src="img/clock.png" width="80" class="clock" alt="Dancing clock"/>
+          <p>I bet you've never seen a clock dance like this one</p>
+        </article>
+      </section>
+    </section>
+
+    <footer>
+      <h2 class="hidden">My footer</h2>
+      <section id="copyright">
+        <h3 class="hidden">Copyright notice</h3>
+        <div class="wrapper">
+          <div class="social"></div>
+          &copy;Copyright 2012 by <a href="http://www.lingulo.com">XXX</a>. All Rights Reserved.
+        </div>
+      </section>
+      <section class="wrapper">
+        <h3 class="hidden">Footer content</h3>
+        <article class="column">
+          <h4>Robby F</h4>
+          Two roads diverged in a yellow wood,  
+          And sorry I could not travel both 
+          And be one traveler, long I stood
+          And looked down one as far as I could 
+          To where it bent in the undergrowth;
+        </article>
+        <article class="column midlist">
+          <h4>Where You Wanna Go?</h4>
+          <ul>
+            <li><a href="javascript:void(0)">How long is forever?</a></li>
+            <li><a href="javascript:void(0)">Sometimes, just one second.</a></li>
+            <li><a href="javascript:void(0)">You're entirely bonkers.</a></li>
+            <li><a href="javascript:void(0)">All the best people are.</a></li>
+          </ul>
+        </article>
+        <article class="column rightlist">
+          <h4>Wee little images</h4>
+          <ul>
+            <li><a href="javascript:void(0)"><img src="img/beach_sml.jpg" width="80" alt="Beach" /><span>Here's that lovely beach again</span></a></li>
+            <li><a href="javascript:void(0)"><img src="img/niagra_sml.jpg" width="80" alt="Niagra" /><span>The big waterfall is small</span></a></li>
+            <li><a href="javascript:void(0)"><img src="img/machu_sml.jpg" width="80" alt="Machu" /><span>It even looks majestic this small</span></a></li>
+          </ul>
+        </article>
+      </section>
+
+
+
+
+  </body>
+
+</html>
